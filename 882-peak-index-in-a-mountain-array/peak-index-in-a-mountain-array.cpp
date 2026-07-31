@@ -11,9 +11,9 @@ public:
                 return mid;
             }
 
-            if (arr[mid - 1] < arr[mid]) {
+            if (arr[mid - 1] < arr[mid]) { //increasing slope
                 start = mid + 1;
-            } else {
+            } else { // decreasing slope
                 end = mid - 1;   
             }
         }
